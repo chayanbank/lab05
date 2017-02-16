@@ -34,7 +34,7 @@
             xmlhttp1.onreadystatechange = function() {
                 alert(xmlhttp1.readyState + " : " + xmlhttp1.status);
                 if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
-                    document.getElementById("myDiv").innerHTML = xmlhttp1.responseText;
+                    document.getElementById("myDiv1").innerHTML = xmlhttp1.responseText;
                 }
             }
             xmlhttp1.open("GET", "http://angsila.cs.buu.ac.th/~58160038/887371/lab05/kamkom.php", true);
@@ -52,7 +52,7 @@
             xmlhttp2.onreadystatechange = function() {
                 alert(xmlhttp2.readyState + " : " + xmlhttp2.status);
                 if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
-                    document.getElementById("myDiv").innerHTML = xmlhttp2.responseText;
+                    document.getElementById("myDiv2").innerHTML = xmlhttp2.responseText;
                 }
             }
             xmlhttp2.open("GET", "http://angsila.cs.buu.ac.th/~58160421/887371/lab05/kamkom.php", true);
@@ -70,7 +70,7 @@
             xmlhttp3.onreadystatechange = function() {
                 alert(xmlhttp3.readyState + " : " + xmlhttp3.status);
                 if (xmlhttp3.readyState == 4 && xmlhttp3.status == 200) {
-                    document.getElementById("myDiv").innerHTML = xmlhttp3.responseText;
+                    document.getElementById("myDiv3").innerHTML = xmlhttp3.responseText;
                 }
             }
             xmlhttp3.open("GET", "http://angsila.cs.buu.ac.th/~58160433/887371/lab05/kamkom.php", true);
@@ -82,6 +82,15 @@
 <body>
     <div id="myDiv">
         <h2>Let AJAX change this text</h2>
+    </div>
+    <div id="myDiv1">
+        <h2></h2>
+    </div>
+    <div id="myDiv2">
+        <h2></h2>
+    </div>
+    <div id="myDiv3">
+        <h2></h2>
     </div>
     <button type="button" onclick="loadXMLDoc()">
         Change Content
