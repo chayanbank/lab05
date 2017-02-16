@@ -21,6 +21,60 @@
             }
             xmlhttp.open("GET", "kamkom.php", true);
             xmlhttp.send();
+
+            var xmlhttp1;
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp1 = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp1 = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xmlhttp1.onreadystatechange = function() {
+                alert(xmlhttp1.readyState + " : " + xmlhttp1.status);
+                if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
+                    document.getElementById("myDiv").innerHTML = xmlhttp1.responseText;
+                }
+            }
+            xmlhttp1.open("GET", "http://angsila.cs.buu.ac.th/~58160038/887371/lab05/kamkom.php", true);
+            xmlhttp1.send();
+
+            var xmlhttp2;
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp2 = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp2 = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xmlhttp2.onreadystatechange = function() {
+                alert(xmlhttp2.readyState + " : " + xmlhttp2.status);
+                if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
+                    document.getElementById("myDiv").innerHTML = xmlhttp2.responseText;
+                }
+            }
+            xmlhttp2.open("GET", "http://angsila.cs.buu.ac.th/~58160421/887371/lab05/kamkom.php", true);
+            xmlhttp2.send();
+
+            var xmlhttp3;
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp3 = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xmlhttp3 = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xmlhttp3.onreadystatechange = function() {
+                alert(xmlhttp3.readyState + " : " + xmlhttp3.status);
+                if (xmlhttp3.readyState == 4 && xmlhttp3.status == 200) {
+                    document.getElementById("myDiv").innerHTML = xmlhttp3.responseText;
+                }
+            }
+            xmlhttp3.open("GET", "http://angsila.cs.buu.ac.th/~58160433/887371/lab05/kamkom.php", true);
+            xmlhttp3.send();
         }
     </script>
 </head>
