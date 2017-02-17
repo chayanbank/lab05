@@ -32,7 +32,7 @@
             }
 
             xmlhttp1.onreadystatechange = function() {
-                alert(xmlhttp1.readyState + " : " + xmlhttp1.status);
+                // alert(xmlhttp1.readyState + " : " + xmlhttp1.status);
                 if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
                     document.getElementById("myDiv1").innerHTML = xmlhttp1.responseText;
                 }
@@ -50,7 +50,7 @@
             }
 
             xmlhttp2.onreadystatechange = function() {
-                alert(xmlhttp2.readyState + " : " + xmlhttp2.status);
+                //alert(xmlhttp2.readyState + " : " + xmlhttp2.status);
                 if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
                     document.getElementById("myDiv2").innerHTML = xmlhttp2.responseText;
                 }
@@ -68,7 +68,7 @@
             }
 
             xmlhttp3.onreadystatechange = function() {
-                alert(xmlhttp3.readyState + " : " + xmlhttp3.status);
+                //alert(xmlhttp3.readyState + " : " + xmlhttp3.status);
                 if (xmlhttp3.readyState == 4 && xmlhttp3.status == 200) {
                     document.getElementById("myDiv3").innerHTML = xmlhttp3.responseText;
                 }
